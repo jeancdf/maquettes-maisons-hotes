@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Réserver — Les Volets Bleus (maquette Complet)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500..700&family=Work+Sans:wght@300..700&display=swap">
+<link rel="stylesheet" href="../kit/std.css">
+<style>:root{--pri:#2C4A6E;--pri-2:#3B5F88;--acc:#8A6420;--soft:#EEF3F7;--ink:#1A2533;--muted:#566273;--line:#DDE3EA;--radius:6px;--fd:'Lora';--fb:'Work Sans';--fdw:600}</style>
+</head>
+<body>
+<div class="topbar wrap"><span><b>Réservation directe</b> · acompte de 30 %, solde à l’arrivée</span><span>Ouvert d’avril à octobre · <a href="tel:+33000000000"><span class="ph">[05 00 00 00 00]</span></a></span></div>
+<header class="hd wrap">
+  <a class="logo" href="index.html"><b>Les Volets Bleus</b><small>Chambres d’hôtes · Lot</small></a>
+  <nav aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="prestations.html">Chambres</a><a href="realisations.html">Galerie</a><a href="a-propos.html">Vos hôtes</a><a href="contact.html" class="on" aria-current="page">Réserver</a></nav>
+  <div class="side"><a class="btn sm" href="contact.html#demande">Réserver</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i></button></div>
+</header>
+<nav class="mnav" aria-label="Menu mobile"><a href="index.html">Accueil</a><a href="prestations.html">Chambres</a><a href="realisations.html">Galerie</a><a href="a-propos.html">Vos hôtes</a><a href="contact.html" class="on" aria-current="page">Réserver</a><a class="btn" href="contact.html#demande">Réserver</a></nav>
+
+<main>
+<section class="ph-head wrap"><div class="crumb"><a href="index.html">Accueil</a> / Réserver</div>
+  <h1>Réserver votre séjour</h1><p class="lede">Indiquez vos dates et la chambre : nous confirmons la disponibilité sous 24 h.</p></section>
+<section class="s wrap" style="padding-top:56px"><div class="contact">
+  <div><div class="eyebrow">Coordonnées</div>
+    <h3>Adresse</h3><p><span class="ph">[Adresse]</span><br>46XXX <span class="ph">[Commune]</span></p>
+    <h3>Horaires</h3><table class="hours"><tbody><tr><td>Ouverture</td><td>avril → octobre</td></tr><tr><td>Arrivée</td><td>16 h – 19 h</td></tr><tr><td>Départ</td><td>avant 11 h</td></tr><tr><td>Séjour minimum</td><td>2 nuits en juillet-août</td></tr></tbody></table>
+    <h3>Nous joindre</h3><a class="cline" href="tel:+33000000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="ph">[05 00 00 00 00]</span></a><a class="cline" href="mailto:contact@nom-de-la-maison.fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="ph">[contact@nom-de-la-maison.fr]</span></a><a class="cline" href="#" data-demo="Lien vers le compte Instagram à renseigner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><span class="ph">[@compte-instagram]</span></a>
+    <h3>Accès</h3><p>15 min de Cahors, 25 min de Saint-Cirq-Lapopie. Gare de Cahors : navette sur demande.</p></div>
+  <div id="demande" style="scroll-margin-top:110px"><form class="demo" novalidate>
+        <div class="f"><label for="nom">Nom et prénom</label><input id="nom" name="nom" type="text" required></div><div class="f"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required></div><div class="f full"><label for="email">E-mail</label><input id="email" name="email" type="email" required></div><div class="f"><label for="arrivee">Arrivée</label><input id="arrivee" name="arrivee" type="date" required></div><div class="f"><label for="depart">Départ</label><input id="depart" name="depart" type="date" required></div><div class="f"><label for="voyageurs">Voyageurs</label><select id="voyageurs" name="voyageurs"><option>2 adultes</option><option>1 adulte</option><option>2 adultes + 1 enfant</option><option>2 adultes + 2 enfants</option><option>3 adultes</option><option>4 adultes</option></select></div><div class="f"><label for="chambre">Chambre</label><select id="chambre" name="chambre"><option value="indifferent">Indifférent</option><option value="prune" data-pp="90">Chambre Prune · 90 €</option><option value="lavande" data-pp="95">Chambre Lavande · 95 €</option><option value="tilleul" data-pp="105">Chambre Tilleul · 105 €</option><option value="noyer" data-pp="140">Suite Noyer · 140 €</option></select></div><div class="f"><label for="diner">Table d’hôtes</label><select id="diner" name="diner"><option>Non merci</option><option>1 soir</option><option>2 soirs</option><option>Tous les soirs de service</option></select></div><div class="f full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Heure d’arrivée, régimes particuliers…"></textarea></div>
+        <label class="consent full"><input type="checkbox" name="rgpd" required> J’accepte que mes informations soient utilisées pour répondre à ma demande.</label>
+        <button class="btn full" type="submit">Envoyer ma demande <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+      <div class="sent" role="status"><h3>Demande de séjour envoyée</h3><p>Nous vous confirmons la disponibilité et le montant sous 24 h. Récapitulatif :</p><dl></dl>
+        <p class="small">Maquette de démonstration : aucune donnée n’est envoyée.</p><button class="btn line sm" type="button" data-reset>Faire une autre demande</button></div></div>
+</div></section>
+<section class="s soft wrap"><div class="two"><div><div class="eyebrow">Avant d’écrire</div><h2 class="t">Questions courantes</h2></div>
+  <div class="faq"><details><summary>Le petit-déjeuner est-il inclus ?</summary><p>Oui, il est compris dans le prix de la chambre, servi de 8 h à 10 h.</p></details><details><summary>Peut-on dîner sur place ?</summary><p>Oui, table d’hôtes le lundi, le mercredi et le vendredi, à réserver la veille.</p></details><details><summary>Les animaux sont-ils acceptés ?</summary><p>Sur demande, pour les chiens calmes, avec un supplément de 10 € par nuit.</p></details><p style="margin-top:18px"><a class="link" href="prestations.html#faq">Toutes les questions →</a></p></div></div></section>
+</main>
+<footer class="ft wrap">
+  <div class="top">
+    <div><a class="logo" href="index.html"><b>Les Volets Bleus</b><small>Chambres d’hôtes · Lot</small></a><p style="margin-top:16px;max-width:290px">4 chambres d’hôtes avec piscine, à 15 minutes de Cahors.</p></div>
+    <div><h4>Pages</h4><a class="l" href="index.html">Accueil</a><a class="l" href="prestations.html">Chambres</a><a class="l" href="realisations.html">Galerie</a><a class="l" href="a-propos.html">Vos hôtes</a><a class="l" href="contact.html">Réserver</a></div>
+    <div><h4>Horaires</h4><span class="l">Saison : avril → octobre</span><span class="l">Arrivée : 16 h – 19 h</span><span class="l">Départ : avant 11 h</span></div>
+    <div><h4>Contact</h4><span class="l"><span class="ph">[Adresse]</span></span><a class="l" href="tel:+33000000000"><span class="ph">[05 00 00 00 00]</span></a><a class="l" href="mailto:contact@nom-de-la-maison.fr"><span class="ph">[contact@nom-de-la-maison.fr]</span></a></div>
+  </div>
+  <div class="bot"><span>© <span data-year></span> Les Volets Bleus · <a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#donnees">Données personnelles</a></span><span class="demo-note">Maquette — établissement fictif, informations illustratives · Réalisation : [votre nom]</span></div>
+</footer>
+<script src="../kit/std.js"></script>
+</body>
+</html>
