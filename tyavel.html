@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ty Avel — chambres d’hôtes, Finistère (maquette)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500..800&family=Public+Sans:wght@300..700&display=swap">
+<style>
+/* ===== version ordinateur (maquette 1440 px, mise à l'échelle) ===== */
+:root{--navy:#13283D;--navy2:#1D3A55;--sea:#4F807D;--foam:#EEF4F5;--paper:#FFFFFF;--ink:#14212D;--mut:#566573;--line:#DCE4E8}
+*{box-sizing:border-box;margin:0;padding:0}
+.dk{width:1440px;position:relative;background:var(--paper);color:var(--ink);font-family:'Public Sans',sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.dk .cap{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--sea)}
+.dk h2{font-family:'Epilogue',sans-serif;font-weight:700;font-size:50px;line-height:1.05;letter-spacing:-.03em;color:var(--navy)}
+.dk .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:14.5px;padding:16px 26px;border-radius:999px;white-space:nowrap}
+.dk .btn.n{background:var(--navy);color:#fff}
+.dk .btn.w{background:#fff;color:var(--navy)}
+.dk .btn.l{border:1.5px solid currentColor;padding:14.5px 24.5px}
+.dk .ph{border-bottom:1px dashed #9FB0BE;color:var(--mut);white-space:nowrap}
+.dk .stripes{height:14px;background:repeating-linear-gradient(180deg,var(--navy) 0 3px,#fff 3px 7px)}
+.dk .sh{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:46px}
+.dk .sh h2{margin-top:12px}
+.dk .sh p{max-width:400px;color:var(--mut)}
+.dk header{display:flex;align-items:center;justify-content:space-between;padding:24px 80px}
+.dk .logo{display:flex;align-items:center;gap:14px}
+.dk .logo .mk{width:44px;height:44px;border-radius:50%;background:var(--navy);display:grid;place-items:center}
+.dk .logo .mk svg{width:24px;height:24px}
+.dk .logo b{font-family:'Epilogue';font-weight:800;font-size:26px;letter-spacing:-.03em;display:block;line-height:1;color:var(--navy)}
+.dk .logo small{font-size:12px;color:var(--mut)}
+.dk nav{display:flex;gap:32px;font-size:15px;font-weight:600;color:var(--navy)}
+.dk .hero{display:grid;grid-template-columns:.95fr 1.05fr;gap:0;min-height:720px}
+.dk .hero .txt{padding:70px 70px 60px 80px;background:var(--foam);display:flex;flex-direction:column}
+.dk .hero h1{font-family:'Epilogue';font-weight:800;font-size:66px;line-height:1.02;letter-spacing:-.04em;color:var(--navy);margin:18px 0 22px}
+.dk .hero p{font-size:19px;color:#2F4152}
+.dk .book{margin-top:34px;background:#fff;border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(19,40,61,.08)}
+.dk .book .f{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px}
+.dk .book .f div{border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.dk .book .f span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.dk .book .f b{font-family:'Epilogue';font-weight:700;font-size:19px;color:var(--navy)}
+.dk .book .btn{width:100%}
+.dk .hero .keys{margin-top:auto;padding-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dk .hero .keys b{display:block;font-family:'Epilogue';font-weight:800;font-size:32px;color:var(--navy);letter-spacing:-.03em}
+.dk .hero .keys span{font-size:14px;color:var(--mut)}
+.dk .hero .pic{background:url(img/t-maison.jpg) center/cover;position:relative}
+.dk .hero .pic .tag{position:absolute;left:28px;bottom:28px;background:#fff;border-radius:999px;padding:10px 18px;font-weight:700;font-size:14px;color:var(--navy)}
+.dk .rooms{padding:110px 80px}
+.dk .rg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.dk .rc{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.dk .rc .pic{height:280px;background-size:cover;background-position:center}
+.dk .rc .body{padding:22px 24px 24px}
+.dk .rc h3{font-family:'Epilogue';font-weight:700;font-size:25px;letter-spacing:-.02em;color:var(--navy)}
+.dk .rc .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 14px}
+.dk .rc .tags span{font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--foam);color:var(--navy)}
+.dk .rc .row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:14px}
+.dk .rc .row b{font-family:'Epilogue';font-weight:800;font-size:26px;color:var(--navy)}
+.dk .rc .row small{color:var(--mut);font-size:13.5px}
+.dk .sea{display:grid;grid-template-columns:1.1fr .9fr;background:var(--navy);color:#fff}
+.dk .sea .imgs{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:300px 300px;gap:6px;padding:6px}
+.dk .sea .imgs div{background-size:cover;background-position:center}
+.dk .sea .imgs .t{grid-row:span 2}
+.dk .sea .txt{padding:90px 72px}
+.dk .sea .cap{color:#9CC6C2}
+.dk .sea h2{color:#fff;margin:12px 0 18px}
+.dk .sea p{color:#C8D6E2}
+.dk .tides{margin-top:28px;background:var(--navy2);border-radius:14px;padding:20px 22px}
+.dk .tides .hd{display:flex;justify-content:space-between;font-size:13px;color:#9CC6C2;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.dk .tides .tg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.dk .tides .tg div{background:var(--navy);border-radius:10px;padding:10px 12px}
+.dk .tides .tg span{display:block;font-size:12px;color:#9FB3C6}
+.dk .tides .tg b{font-family:'Epilogue';font-weight:700;font-size:22px}
+.dk .tides small{display:block;margin-top:10px;font-size:12.5px;color:#9FB3C6}
+.dk .dej{padding:110px 80px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.dk .dej .pic{height:480px;border-radius:18px;background:url(img/t-cafe.jpg) center/cover}
+.dk .dej ul{list-style:none;margin-top:24px;display:grid;gap:10px}
+.dk .dej li{display:flex;gap:12px;font-size:16px}
+.dk .dej li::before{content:"";width:18px;height:2px;background:var(--sea);margin-top:12px;flex:none}
+.dk .act{padding:0 80px 110px}
+.dk .ag{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.dk .ac .pic{height:230px;border-radius:14px;background-size:cover;background-position:center}
+.dk .ac h3{font-family:'Epilogue';font-weight:700;font-size:20px;color:var(--navy);margin-top:14px;letter-spacing:-.02em}
+.dk .ac span{font-size:14px;color:var(--sea);font-weight:700}
+.dk .infos{background:var(--foam);padding:100px 80px;display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:56px}
+.dk .infos h3{font-family:'Epilogue';font-weight:700;font-size:22px;color:var(--navy);margin-bottom:12px}
+.dk .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.dk .map{border-radius:16px;overflow:hidden;min-height:340px;position:relative;background:#fff}
+.dk .map svg{position:absolute;inset:0;width:100%;height:100%}
+.dk .final{text-align:center;padding:110px 80px}
+.dk .final h2{font-size:58px}
+.dk .final p{color:var(--mut);margin:14px auto 30px;max-width:520px}
+.dk footer{background:var(--navy);color:#AFC0CF;padding:28px 80px 34px;display:flex;justify-content:space-between;font-size:13.5px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.dk{overflow:hidden}
+/* ===== version mobile ===== */
+:root{--bg:#FFFFFF;--fg:#14212D;--soft:#2F4152;--mut:#566573;--line:#DCE4E8;--accent:#4F807D;--onaccent:#fff;--panel:#fff;--btnbg:#13283D;--btnfg:#fff;--stickybg:rgba(255,255,255,.97);--disp:"Epilogue",sans-serif;--dw:700;--body:"Public Sans",sans-serif;--emstyle:normal;--rad:999px;--avr:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+.mb{color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mb .p{padding:0 20px}
+.mb .cap{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.mb h2{font-family:var(--disp);font-weight:var(--dw);font-size:38px;line-height:1.08;margin-top:12px}
+.mb h2 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .btn{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:500;font-size:14px;letter-spacing:.06em;padding:15px 18px;white-space:nowrap;border-radius:var(--rad)}
+.mb .btn.a{background:var(--btnbg);color:var(--btnfg)}
+.mb .btn.o{border:1px solid var(--fg);padding:14px 17px}
+.mb .ph{border-bottom:1px dashed var(--mut);color:var(--mut);white-space:nowrap}
+.mb section{position:relative}
+.mb header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+.mb header .r{display:flex;gap:10px;align-items:center}
+.mb header .btn{padding:10px 14px;font-size:12.5px}
+.mb .burger{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.mb .burger svg{width:18px;height:18px}
+.mb .hero{padding:26px 0 0}
+.mb .hero h1{font-family:var(--disp);font-weight:var(--dw);font-size:46px;line-height:1.05;margin:14px 0 14px}
+.mb .hero h1 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .hero p{color:var(--soft);font-size:16px}
+.mb .hero .img{height:330px;margin-top:24px;background-size:cover;background-position:center}
+.mb .book{margin:0 20px;border:1px solid var(--line);padding:16px;background:var(--panel);transform:translateY(-36px)}
+.mb .book .f{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;margin:10px 0 12px}
+.mb .book .f div{border:1px solid var(--line);padding:7px 10px}
+.mb .book .f b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px}
+.mb .book .note{font-size:12px;color:var(--mut);margin-top:10px}
+.mb .blk{padding:14px 20px 44px}
+.mb .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.mb .row b{display:block;font-weight:500;font-size:15.5px;line-height:1.3}
+.mb .row small{display:block;color:var(--mut);font-size:13px}
+.mb .row .pr{font-family:var(--disp);font-size:18px;white-space:nowrap}
+.mb .illu{font-size:12px;color:var(--mut);margin-top:12px}
+.mb .rail{display:flex;gap:12px;overflow:hidden;padding:22px 20px 0}
+.mb .rail .c{flex:none;width:240px}
+.mb .rail .c .im{height:260px;background-size:cover;background-position:center}
+.mb .rail .c h3{font-family:var(--disp);font-weight:var(--dw);font-size:24px;margin-top:12px;line-height:1.1}
+.mb .rail .c p{font-size:13.5px;color:var(--mut);margin-top:4px}
+.mb .dots{display:flex;gap:6px;justify-content:center;margin-top:20px}
+.mb .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.mb .dots i.on{width:20px;border-radius:6px;background:var(--accent)}
+.mb .mem{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.mb .mem .av{width:72px;height:72px;background-size:cover;background-position:center 30%;border-radius:var(--avr)}
+.mb .mem h3{font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .mem p{font-size:13.5px;color:var(--mut)}
+.mb .today{margin-top:18px;border:1px solid var(--accent);padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.mb .today b{font-family:var(--disp);font-weight:var(--dw);font-size:20px;display:block;line-height:1.1}
+.mb .today span{font-size:13px;color:var(--soft)}
+.mb .today em{font-style:normal;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 9px}
+.mb .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.mb .map{margin-top:20px;height:220px;border:1px solid var(--line);overflow:hidden}
+.mb .map svg{width:100%;height:100%}
+.mb .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mb .final{padding:60px 20px 54px;text-align:center;border-top:1px solid var(--line)}
+.mb .final h2{font-size:40px}
+.mb .final p{color:var(--soft);margin:12px 0 22px}
+.mb footer{border-top:1px solid var(--line);padding:30px 20px 120px;color:var(--mut);font-size:13.5px}
+.mb footer .links{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin:18px 0;color:var(--fg)}
+.mb footer .sm{font-size:11.5px;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.mb .sticky{width:390px;padding:12px 16px 26px;background:var(--stickybg);border-top:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:10px}
+.mb .sticky .call{width:52px;height:52px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center}
+.mb .sticky .call svg{width:20px;height:20px}
+.mb .rm{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.mb .rm .th{width:96px;height:76px;background-size:cover;background-position:center;border-radius:var(--avr)}
+.mb .rm b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:19px;line-height:1.15}
+.mb .rm small{display:block;font-size:13px;color:var(--mut)}
+.mb .rm .pr{font-family:var(--disp);font-weight:var(--dw);font-size:19px;white-space:nowrap}
+.mb .figs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 22px}
+.mb .figs div{border-top:1px solid var(--line);padding-top:8px}
+.mb .figs b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .figs span{font-size:12px;color:var(--mut)}
+.mb .book .f b{font-size:15px}
+.mb .today em{font-size:0}
+.mb .today em::after{content:"Saison";font-size:11px}
+.mb .hero h1,.mb h2{letter-spacing:-.035em}
+.mb #m-rail{background:#EEF4F5}
+.mb .stripes{height:10px;background:repeating-linear-gradient(180deg,#13283D 0 2px,#fff 2px 5px)}
+.mb .tides{background:#13283D;color:#fff;border-radius:14px;padding:14px 16px;margin-top:22px}
+.mb .tides .g{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+.mb .tides .g div{background:#1D3A55;border-radius:8px;padding:8px}
+.mb .tides span{display:block;font-size:10.5px;color:#9FB3C6}
+.mb .tides b{font-family:Epilogue;font-weight:700;font-size:16px}
+
+.mb .rail{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-right:20px}
+.mb .rail::-webkit-scrollbar{display:none}
+.mb .rail .c{scroll-snap-align:start;scroll-margin-left:20px}
+.mb .sticky{position:fixed;left:0;right:0;bottom:0;width:auto;z-index:20;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+
+.mb{display:none}
+@media (max-width:760px){.dk{display:none}.mb{display:block}}
+</style>
+</head>
+<body>
+<div class="dk">
+
+<header>
+  <div class="logo"><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M3 15c2 0 2-1.5 4.5-1.5S9.5 15 12 15s2.5-1.5 4.5-1.5S19 15 21 15M3 19c2 0 2-1.5 4.5-1.5S9.5 19 12 19s2.5-1.5 4.5-1.5S19 19 21 19M12 3v8M12 3l5 5h-5"/></svg></span><div><b>Ty Avel</b><small>Chambres d’hôtes · Finistère</small></div></div>
+  <nav><a href="#chambres">Chambres</a><a href="#mer">La mer</a><a href="#petit-dejeuner">Petit-déjeuner</a><a href="#a-faire">À faire</a><a href="#infos">Infos</a></nav>
+  <span class="btn n" style="padding:12px 22px">Réserver</span>
+</header>
+<div class="stripes"></div>
+<section class="hero">
+  <div class="txt"><span class="cap">Maison de pêcheur · presqu’île de Crozon</span>
+    <h1>Chambres d’hôtes à 50 m de la plage</h1>
+    <p>3 chambres dans une maison en pierre au bord de l’eau, petit-déjeuner breton inclus. Départ du GR 34 devant la porte.</p>
+    <div class="book"><div class="f"><div><span>Arrivée</span><b>ven. 10 juil.</b></div><div><span>Départ</span><b>lun. 13 juil.</b></div><div><span>Voyageurs</span><b>2</b></div></div><span class="btn n">Voir les disponibilités</span></div>
+    <div class="keys"><div><b>3</b><span>chambres</span></div><div><b>50 m</b><span>de la plage</span></div><div><b>GR 34</b><span>devant la maison</span></div></div></div>
+  <div class="pic"><span class="tag">La maison, côté jardin</span></div>
+</section>
+
+<section id="chambres" class="rooms">
+  <div class="sh"><div><span class="cap">Chambres</span><h2>Trois chambres, deux avec vue mer</h2></div><p>Prix par nuit pour 2 personnes, petit-déjeuner inclus. Tarifs indicatifs.</p></div>
+  <div class="rg">
+    <div class="rc"><div class="pic" style="background-image:url(img/t-chambre.jpg)"></div><div class="body"><h3>Chambre Goélette</h3><div class="tags"><span>Vue mer</span><span>Lit 160</span><span>Douche</span></div><div class="row"><small>dès</small><b>98 €</b></div></div></div>
+    <div class="rc"><div class="pic" style="background-image:url(img/t-chambre2.jpg)"></div><div class="body"><h3>Chambre Phare</h3><div class="tags"><span>Vue mer</span><span>Lit 180</span><span>Baignoire</span></div><div class="row"><small>dès</small><b>115 €</b></div></div></div>
+    <div class="rc"><div class="pic" style="background-image:url(img/t-bain.jpg)"></div><div class="body"><h3>Chambre Bruyère</h3><div class="tags"><span>Vue jardin</span><span>3 pers.</span><span>Douche</span></div><div class="row"><small>dès</small><b>92 €</b></div></div></div>
+  </div>
+</section>
+
+<section id="mer" class="sea">
+  <div class="imgs"><div class="t" style="background-image:url(img/t-cote.jpg)"></div><div style="background-image:url(img/t-rochers.jpg)"></div><div style="background-image:url(img/t-plage.jpg)"></div></div>
+  <div class="txt"><span class="cap">La mer</span><h2>La plage au bout du jardin</h2>
+    <p>Une crique de sable à 50 mètres, le sentier côtier devant la maison et le port à 10 minutes à pied.</p>
+    <div class="tides"><div class="hd"><span>Marées · aujourd’hui</span><span>coefficient 82</span></div>
+      <div class="tg"><div><span>Pleine mer</span><b>06:42</b></div><div><span>Basse mer</span><b>12:58</b></div><div><span>Pleine mer</span><b>19:05</b></div><div><span>Basse mer</span><b>01:20</b></div></div>
+      <small>Horaires d’exemple. Sur le site final : mis à jour automatiquement.</small></div></div>
+</section>
+
+<section id="petit-dejeuner" class="dej">
+  <div class="pic"></div>
+  <div><span class="cap">Petit-déjeuner</span><h2 style="margin-top:12px">Le petit-déjeuner breton, inclus</h2>
+    <ul><li>Crêpes et galettes du matin</li><li>Beurre demi-sel et confitures maison</li><li>Pain de la boulangerie du port</li><li>Servi de 8 h à 10 h, au jardin quand il fait beau</li></ul></div>
+</section>
+
+<section id="a-faire" class="act">
+  <div class="sh"><div><span class="cap">À faire</span><h2>Depuis la maison</h2></div></div>
+  <div class="ag">
+    <div class="ac"><div class="pic" style="background-image:url(img/t-pointe.jpg)"></div><h3>Sentier GR 34</h3><span>devant la porte</span></div>
+    <div class="ac"><div class="pic" style="background-image:url(img/t-port.jpg)"></div><h3>Le port et ses criées</h3><span>10 min à pied</span></div>
+    <div class="ac"><div class="pic" style="background-image:url(img/t-vagues.jpg)"></div><h3>Kayak et paddle</h3><span>location à 5 min</span></div>
+    <div class="ac"><div class="pic" style="background-image:url(img/t-cabanes.jpg)"></div><h3>Plages de la presqu’île</h3><span>15 plages à 20 min</span></div>
+  </div>
+</section>
+
+<section id="infos" class="infos">
+  <div><h3>Infos pratiques</h3>
+    <div class="hrow"><span>Ouverture</span><span>Toute l’année</span></div>
+    <div class="hrow"><span>Arrivée</span><span>17 h – 20 h</span></div>
+    <div class="hrow"><span>Départ</span><span>avant 11 h</span></div>
+    <div class="hrow"><span>Séjour minimum</span><span>2 nuits</span></div></div>
+  <div><h3>Accès et contact</h3><p><span class="ph">[Adresse]</span><br><span class="ph">29XXX [Commune]</span></p>
+    <p style="margin-top:12px;font-size:15px">Gare de Quimper ou Brest à 1 h. Parking devant la maison.</p>
+    <p style="margin-top:12px"><span class="ph">[02 00 00 00 00]</span><br><span class="ph">[degemer@ty-avel.bzh]</span></p></div>
+  <div class="map"><svg viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice">
+    <rect width="600" height="340" fill="#D7E6EA"/>
+    <path d="M120 -10 C200 40 160 100 230 140 C300 180 260 240 340 260 C420 280 470 220 560 250 L620 360 L-20 360 L-20 -10 Z" fill="#fff"/>
+    <path d="M230 140 C300 180 260 240 340 260" stroke="#13283D" stroke-width="1.5" stroke-dasharray="4 5" fill="none"/>
+    <text x="30" y="200" fill="#4F807D" font-family="Public Sans" font-size="12" letter-spacing="3">MER D’IROISE</text>
+    <circle cx="300" cy="215" r="24" fill="#13283D" opacity=".12"/><circle cx="300" cy="215" r="8" fill="#13283D"/>
+    <text x="318" y="210" fill="#13283D" font-family="Epilogue" font-weight="700" font-size="18">Ty Avel</text>
+    <text x="356" y="306" fill="#566573" font-family="Public Sans" font-size="12">GR 34</text>
+  </svg></div>
+</section>
+<div class="stripes"></div>
+<section class="final">
+  <span class="cap">Ouvert toute l’année</span>
+  <h2 style="margin-top:12px">Réservez votre séjour au bord de la mer</h2>
+  <p>Réservation en ligne, acompte de 30 %. Les hôtes répondent sous 24 h.</p>
+  <span class="btn n">Voir les disponibilités</span>
+</section>
+<footer><span>© Ty Avel · Mentions légales · CGV</span><span>[02 00 00 00 00] · [degemer@ty-avel.bzh]</span><span>Maquette — maison d’hôtes fictive · informations illustratives</span></footer>
+
+</div>
+<div class="mb">
+
+<header id="mb-head"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Epilogue;font-weight:800;font-size:23px;letter-spacing:-.03em;color:#13283D">Ty Avel</span><span style="font-size:11px;color:#566573;margin-top:3px">Chambres d’hôtes · Finistère</span></span><div class="r"><span class="btn a">Réserver</span><span class="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></span></div></header>
+<section class="hero" id="mb-hero">
+  <div class="p"><div class="cap">Maison de pêcheur · Crozon</div><h1>Chambres d’hôtes à 50 m de la plage</h1><p>3 chambres au bord de l’eau, petit-déjeuner breton inclus. GR 34 devant la porte.</p></div>
+  <div class="img" style="background-image:url(img/t-maison.jpg)"></div>
+  <div class="book"><div class="cap">Vos dates</div><div class="f"><div><span class="cap">Arrivée</span><b>10 juil.</b></div><div><span class="cap">Départ</span><b>13 juil.</b></div><div><span class="cap">Pers.</span><b>2</b></div></div><span class="btn a">Voir les disponibilités</span><p class="note">Via <span class="ph">[outil de réservation]</span> · acompte 30 %</p></div>
+</section>
+<section class="blk" id="mb-sig"><div class="stripes" style="margin:0 -20px 26px"></div><div class="cap">Chambres</div><h2>Trois chambres, deux avec vue mer</h2><div style="margin-top:10px"><div class="rm"><div class="th" style="background-image:url(img/t-chambre.jpg)"></div><div><b>Chambre Goélette</b><small>vue mer · lit 160</small></div><span class="pr">dès 98 €</span></div><div class="rm"><div class="th" style="background-image:url(img/t-chambre2.jpg)"></div><div><b>Chambre Phare</b><small>vue mer · baignoire</small></div><span class="pr">dès 115 €</span></div><div class="rm"><div class="th" style="background-image:url(img/t-bain.jpg)"></div><div><b>Chambre Bruyère</b><small>vue jardin · 3 pers.</small></div><span class="pr">dès 92 €</span></div></div><p class="illu">Prix par nuit pour 2, petit-déjeuner inclus. Tarifs indicatifs.</p><div class="tides"><span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9CC6C2;font-weight:700">Marées · aujourd’hui</span><div class="g"><div><span>PM</span><b>06:42</b></div><div><span>BM</span><b>12:58</b></div><div><span>PM</span><b>19:05</b></div><div><span>BM</span><b>01:20</b></div></div><span style="margin-top:8px">Horaires d’exemple.</span></div></section>
+<section id="mb-rail" style="padding:44px 0 44px;"><div class="p"><div class="cap">À faire</div><h2>Depuis la maison</h2></div><div class="rail" data-rail><div class="c"><div class="im" style="background-image:url(img/t-pointe.jpg)"></div><h3>Sentier GR 34</h3><p>Devant la porte.</p></div><div class="c"><div class="im" style="background-image:url(img/t-port.jpg)"></div><h3>Le port</h3><p>10 min à pied.</p></div><div class="c"><div class="im" style="background-image:url(img/t-cabanes.jpg)"></div><h3>Les plages</h3><p>15 plages à 20 min.</p></div></div><div class="dots" data-dots><i class="on"></i><i></i><i></i></div></section>
+<section class="blk" id="mb-team" style="padding-top:44px"><div class="cap">Petit-déjeuner</div><h2>Le petit-déjeuner breton, inclus</h2><div class="hero" style="padding:0"><div class="img" style="height:200px;margin-top:16px;background-image:url(img/t-cafe.jpg)"></div></div><div class="row"><div><b>Crêpes et galettes du matin</b></div><span class="pr"></span></div><div class="row"><div><b>Beurre demi-sel, confitures</b></div><span class="pr"></span></div><div class="row"><div><b>Servi de 8 h à 10 h</b></div><span class="pr"></span></div></section>
+<section class="blk" id="mb-infos" style="padding-top:20px"><div class="cap">Infos pratiques</div><h2>Venir à Ty Avel</h2><div class="today"><div><b>Ouvert toute l’année</b><span>arrivée 17 h – 20 h</span></div><em>Ouvert</em></div><div style="margin-top:6px"><div class="hrow"><span>Départ</span><span>avant 11 h</span></div><div class="hrow"><span>Séjour minimum</span><span>2 nuits</span></div><div class="hrow"><span>Parking</span><span>devant la maison</span></div></div>
+<div class="map"><svg viewBox="0 0 390 220" preserveAspectRatio="xMidYMid slice"><rect width="390" height="220" fill="#D7E6EA"/><path d="M80 -10C130 30 100 70 150 95C200 120 170 160 230 170C290 180 320 140 380 160L410 240L-20 240L-20 -10Z" fill="#fff"/><circle cx="196" cy="140" r="18" fill="#13283D" opacity=".12"/><circle cx="196" cy="140" r="6" fill="#13283D"/><text x="210" y="136" fill="#13283D" font-family="Epilogue" font-weight="700" font-size="15">Ty Avel</text></svg></div><p style="margin-top:14px;font-size:14.5px">Ty Avel · <span class="ph">[Adresse], 29XXX [Commune]</span></p><div class="two"><span class="btn a">Itinéraire</span><span class="btn o">Appeler</span></div><p class="illu">Gare de Quimper ou Brest à 1 h.</p></section>
+<section class="final" id="mb-final"><div class="cap">Ouvert toute l’année</div><h2>Réservez votre séjour au bord de la mer</h2><p>En ligne, acompte de 30 %.</p><span class="btn a">Voir les disponibilités</span></section>
+<footer id="mb-foot"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Epilogue;font-weight:800;font-size:23px;letter-spacing:-.03em;color:#13283D">Ty Avel</span><span style="font-size:11px;color:#566573;margin-top:3px">Chambres d’hôtes · Finistère</span></span><p style="margin-top:10px">Chambres d’hôtes à 50 m de la plage, presqu’île de Crozon.</p><div class="links"><span>Chambres</span><span>La mer</span><span>Petit-déjeuner</span><span>À faire</span><span>Infos</span><span>CGV</span></div><div class="sm"><span>[02 00 00 00 00]</span><span>Maquette — restaurant fictif</span></div></footer>
+<div class="sticky" id="sticky"><span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="btn a">Réserver</span></div>
+
+</div>
+<script>
+  // la maquette ordinateur est dessinée sur 1440 px : on la met à l'échelle de la fenêtre
+  const dk = document.querySelector('.dk');
+  let lastW = 0;
+  function fit() {
+    const w = document.documentElement.clientWidth;
+    if (w === lastW) return;
+    lastW = w;
+    dk.style.zoom = w > 760 ? w / 1440 : '';
+  }
+  addEventListener('resize', fit); setInterval(fit, 300); fit();
+
+  // points du carrousel (mobile)
+  const rail = document.querySelector('.mb [data-rail]');
+  const dots = [...document.querySelectorAll('.mb [data-dots] i')];
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+  }, { passive: true });
+</script>
+</body>
+</html>

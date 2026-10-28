@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Chalet Les Aiguilles — chalet d’hôtes, Chamonix (maquette)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Sans+3:wght@300..700&display=swap">
+<style>
+/* ===== version ordinateur (maquette 1440 px, mise à l'échelle) ===== */
+:root{--pine:#1F2D27;--pine2:#2B3D35;--wood:#8A5A36;--snow:#F4F5F3;--paper:#FFFFFF;--ink:#1B221F;--mut:#5C6560;--line:#DFE2DE}
+*{box-sizing:border-box;margin:0;padding:0}
+.dk{width:1440px;position:relative;background:var(--paper);color:var(--ink);font-family:'Source Sans 3',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.dk .cap{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--wood)}
+.dk h2{font-family:'Zilla Slab',serif;font-weight:600;font-size:54px;line-height:1.05;color:var(--pine)}
+.dk .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:15px;padding:16px 26px;border-radius:4px;white-space:nowrap}
+.dk .btn.p{background:var(--pine);color:#fff}
+.dk .btn.w{background:#fff;color:var(--pine)}
+.dk .btn.wd{background:var(--wood);color:#fff}
+.dk .btn.l{border:1.5px solid currentColor;padding:14.5px 24.5px}
+.dk .ph{border-bottom:1px dashed #A9AFAB;color:var(--mut);white-space:nowrap}
+.dk .sh{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:46px}
+.dk .sh h2{margin-top:12px}
+.dk .sh p{max-width:400px;color:var(--mut)}
+.dk header{position:absolute;left:0;right:0;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:26px 80px;color:#fff}
+.dk .logo{display:flex;align-items:center;gap:12px}
+.dk .logo svg{width:40px;height:30px}
+.dk .logo b{font-family:'Zilla Slab';font-weight:700;font-size:27px;display:block;line-height:1}
+.dk .logo small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D8DDD9;font-weight:600}
+.dk nav{display:flex;gap:32px;font-size:15.5px;font-weight:600}
+.dk .hero{position:relative;height:880px;background:url(img/c-nuit.jpg) center 70%/cover}
+.dk .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,20,17,.86) 0%,rgba(14,20,17,.55) 45%,rgba(14,20,17,.05) 80%),linear-gradient(0deg,rgba(14,20,17,.6) 0%,rgba(14,20,17,0) 35%)}
+.dk .hero .in{position:absolute;left:80px;top:200px;z-index:1;color:#fff;max-width:660px}
+.dk .hero .cap{color:#E2B98F}
+.dk .hero h1{font-family:'Zilla Slab';font-weight:700;font-size:74px;line-height:1;margin:18px 0 20px}
+.dk .hero p{font-size:19.5px;color:#E3E7E4}
+.dk .season{display:inline-flex;margin-top:34px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:4px}
+.dk .season span{padding:10px 22px;border-radius:4px;font-weight:700;font-size:15px}
+.dk .season span.on{background:#fff;color:var(--pine)}
+.dk .hero .ctas{display:flex;gap:12px;margin-top:22px}
+.dk .figs{position:absolute;left:80px;right:80px;bottom:0;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.25);color:#fff}
+.dk .figs div{padding:22px 0 28px}
+.dk .figs b{display:block;font-family:'Zilla Slab';font-weight:600;font-size:30px;line-height:1.1}
+.dk .figs span{font-size:14px;color:#C9D1CC}
+.dk .offer{padding:120px 80px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.dk .of{border:1px solid var(--line);border-radius:6px;padding:34px 34px 30px}
+.dk .of.dark{background:var(--pine);color:#fff;border-color:var(--pine)}
+.dk .of .cap{display:block}
+.dk .of.dark .cap{color:#E2B98F}
+.dk .of h3{font-family:'Zilla Slab';font-weight:600;font-size:34px;margin:10px 0 6px}
+.dk .of p{color:var(--mut)}
+.dk .of.dark p{color:#C9D1CC}
+.dk .of ul{list-style:none;margin-top:18px;border-top:1px solid var(--line);padding-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;font-size:15.5px}
+.dk .of.dark ul{border-color:#3C5047}
+.dk .of li::before{content:"✓ ";color:var(--wood);font-weight:700}
+.dk .of.dark li::before{color:#E2B98F}
+.dk .rooms{padding:0 80px 120px}
+.dk .rt{border-top:2px solid var(--pine)}
+.dk .rt .hd,.dk .rt .r{display:grid;grid-template-columns:110px 1.4fr .8fr .8fr .8fr;gap:24px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.dk .rt .hd{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--mut)}
+.dk .rt .r .th{width:110px;height:80px;border-radius:4px;background-size:cover;background-position:center}
+.dk .rt .r b{font-family:'Zilla Slab';font-weight:600;font-size:24px;color:var(--pine);display:block}
+.dk .rt .r small{font-size:14px;color:var(--mut)}
+.dk .rt .r .pr{font-family:'Zilla Slab';font-weight:600;font-size:24px}
+.dk .illu{margin-top:14px;font-size:14px;color:var(--mut)}
+.dk .chalet{display:grid;grid-template-columns:1.1fr .9fr;background:var(--snow)}
+.dk .chalet .imgs{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:300px 300px;gap:8px;padding:8px}
+.dk .chalet .imgs div{background-size:cover;background-position:center}
+.dk .chalet .imgs .t{grid-row:span 2}
+.dk .chalet .txt{padding:90px 72px}
+.dk .chalet p{color:var(--mut);margin-top:16px}
+.dk .eq{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px}
+.dk .eq div{display:flex;gap:12px;align-items:center;font-size:16px}
+.dk .eq svg{width:22px;height:22px;color:var(--wood);flex:none}
+.dk .acts{padding:120px 80px}
+.dk .ag{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.dk .ac{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.dk .ac .pic{background-size:cover;background-position:center;min-height:320px}
+.dk .ac .body{padding:28px}
+.dk .ac h3{font-family:'Zilla Slab';font-weight:600;font-size:28px;color:var(--pine);margin:8px 0 12px}
+.dk .ac .row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.dk .ac .row b{font-weight:700}
+.dk .infos{background:var(--pine);color:#fff;padding:100px 80px;display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:56px}
+.dk .infos .cap{color:#E2B98F}
+.dk .infos h3{font-family:'Zilla Slab';font-weight:600;font-size:26px;margin:10px 0 14px}
+.dk .infos .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #3C5047;font-size:15.5px}
+.dk .infos p{color:#C9D1CC}
+.dk .infos .ph{color:#C9D1CC;border-color:#5E7268}
+.dk .final{background:url(img/c-vallee.jpg) center/cover;position:relative;text-align:center;padding:130px 80px}
+.dk .final::before{content:"";position:absolute;inset:0;background:rgba(14,20,17,.55)}
+.dk .final *{position:relative}
+.dk .final h2{color:#fff;font-size:62px}
+.dk .final p{color:#E3E7E4;margin:16px auto 32px;max-width:560px}
+.dk footer{background:var(--pine);color:#AEB8B2;border-top:1px solid #3C5047;padding:28px 80px 34px;display:flex;justify-content:space-between;font-size:13.5px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.dk{overflow:hidden}
+/* ===== version mobile ===== */
+:root{--bg:#FFFFFF;--fg:#1B221F;--soft:#3A433E;--mut:#5C6560;--line:#DFE2DE;--accent:#8A5A36;--onaccent:#fff;--panel:#fff;--btnbg:#1F2D27;--btnfg:#fff;--stickybg:rgba(255,255,255,.97);--disp:"Zilla Slab",serif;--dw:600;--body:"Source Sans 3",sans-serif;--emstyle:normal;--rad:4px;--avr:4px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+.mb{color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mb .p{padding:0 20px}
+.mb .cap{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.mb h2{font-family:var(--disp);font-weight:var(--dw);font-size:38px;line-height:1.08;margin-top:12px}
+.mb h2 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .btn{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:500;font-size:14px;letter-spacing:.06em;padding:15px 18px;white-space:nowrap;border-radius:var(--rad)}
+.mb .btn.a{background:var(--btnbg);color:var(--btnfg)}
+.mb .btn.o{border:1px solid var(--fg);padding:14px 17px}
+.mb .ph{border-bottom:1px dashed var(--mut);color:var(--mut);white-space:nowrap}
+.mb section{position:relative}
+.mb header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+.mb header .r{display:flex;gap:10px;align-items:center}
+.mb header .btn{padding:10px 14px;font-size:12.5px}
+.mb .burger{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.mb .burger svg{width:18px;height:18px}
+.mb .hero{padding:26px 0 0}
+.mb .hero h1{font-family:var(--disp);font-weight:var(--dw);font-size:46px;line-height:1.05;margin:14px 0 14px}
+.mb .hero h1 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .hero p{color:var(--soft);font-size:16px}
+.mb .hero .img{height:330px;margin-top:24px;background-size:cover;background-position:center}
+.mb .book{margin:0 20px;border:1px solid var(--line);padding:16px;background:var(--panel);transform:translateY(-36px)}
+.mb .book .f{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;margin:10px 0 12px}
+.mb .book .f div{border:1px solid var(--line);padding:7px 10px}
+.mb .book .f b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px}
+.mb .book .note{font-size:12px;color:var(--mut);margin-top:10px}
+.mb .blk{padding:14px 20px 44px}
+.mb .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.mb .row b{display:block;font-weight:500;font-size:15.5px;line-height:1.3}
+.mb .row small{display:block;color:var(--mut);font-size:13px}
+.mb .row .pr{font-family:var(--disp);font-size:18px;white-space:nowrap}
+.mb .illu{font-size:12px;color:var(--mut);margin-top:12px}
+.mb .rail{display:flex;gap:12px;overflow:hidden;padding:22px 20px 0}
+.mb .rail .c{flex:none;width:240px}
+.mb .rail .c .im{height:260px;background-size:cover;background-position:center}
+.mb .rail .c h3{font-family:var(--disp);font-weight:var(--dw);font-size:24px;margin-top:12px;line-height:1.1}
+.mb .rail .c p{font-size:13.5px;color:var(--mut);margin-top:4px}
+.mb .dots{display:flex;gap:6px;justify-content:center;margin-top:20px}
+.mb .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.mb .dots i.on{width:20px;border-radius:6px;background:var(--accent)}
+.mb .mem{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.mb .mem .av{width:72px;height:72px;background-size:cover;background-position:center 30%;border-radius:var(--avr)}
+.mb .mem h3{font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .mem p{font-size:13.5px;color:var(--mut)}
+.mb .today{margin-top:18px;border:1px solid var(--accent);padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.mb .today b{font-family:var(--disp);font-weight:var(--dw);font-size:20px;display:block;line-height:1.1}
+.mb .today span{font-size:13px;color:var(--soft)}
+.mb .today em{font-style:normal;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 9px}
+.mb .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.mb .map{margin-top:20px;height:220px;border:1px solid var(--line);overflow:hidden}
+.mb .map svg{width:100%;height:100%}
+.mb .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mb .final{padding:60px 20px 54px;text-align:center;border-top:1px solid var(--line)}
+.mb .final h2{font-size:40px}
+.mb .final p{color:var(--soft);margin:12px 0 22px}
+.mb footer{border-top:1px solid var(--line);padding:30px 20px 120px;color:var(--mut);font-size:13.5px}
+.mb footer .links{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin:18px 0;color:var(--fg)}
+.mb footer .sm{font-size:11.5px;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.mb .sticky{width:390px;padding:12px 16px 26px;background:var(--stickybg);border-top:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:10px}
+.mb .sticky .call{width:52px;height:52px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center}
+.mb .sticky .call svg{width:20px;height:20px}
+.mb .rm{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.mb .rm .th{width:96px;height:76px;background-size:cover;background-position:center;border-radius:var(--avr)}
+.mb .rm b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:19px;line-height:1.15}
+.mb .rm small{display:block;font-size:13px;color:var(--mut)}
+.mb .rm .pr{font-family:var(--disp);font-weight:var(--dw);font-size:19px;white-space:nowrap}
+.mb .figs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 22px}
+.mb .figs div{border-top:1px solid var(--line);padding-top:8px}
+.mb .figs b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .figs span{font-size:12px;color:var(--mut)}
+.mb .book .f b{font-size:15px}
+.mb .today em{font-size:0}
+.mb .today em::after{content:"Saison";font-size:11px}
+.mb #m-rail{background:#F4F5F3}
+.mb .cap{color:#8A5A36;font-weight:700}
+.mb .season{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:6px;padding:3px;margin:16px 0 4px}
+.mb .season span{text-align:center;padding:9px 0;border-radius:4px;font-weight:700;font-size:13.5px;color:var(--mut)}
+.mb .season span.on{background:#1F2D27;color:#fff}
+
+.mb .rail{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-right:20px}
+.mb .rail::-webkit-scrollbar{display:none}
+.mb .rail .c{scroll-snap-align:start;scroll-margin-left:20px}
+.mb .sticky{position:fixed;left:0;right:0;bottom:0;width:auto;z-index:20;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+
+.mb{display:none}
+@media (max-width:760px){.dk{display:none}.mb{display:block}}
+</style>
+</head>
+<body>
+<div class="dk">
+
+<header>
+  <div class="logo"><svg viewBox="0 0 40 30" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M2 28 L14 8 L20 17 L26 4 L38 28 Z"/><path d="M11 13 L14 16 L17 13 M23 9 L26 12 L29 9" stroke-width="1.6"/></svg><div><b>Les Aiguilles</b><small>Chalet d’hôtes · Vallée de Chamonix</small></div></div>
+  <nav><a href="#saisons">Hiver</a><a href="#alentours">Été</a><a href="#chambres">Chambres</a><a href="#chalet">Le chalet</a><a href="#infos">Infos</a></nav>
+  <span class="btn w" style="padding:12px 22px">Réserver</span>
+</header>
+<section class="hero">
+  <div class="in"><span class="cap">Chalet d’hôtes · demi-pension · navette pistes</span>
+    <h1>Chalet d’hôtes en demi-pension à Chamonix</h1>
+    <p>5 chambres dans un chalet en bois, dîner et petit-déjeuner compris, sauna et local à skis. Navette pour les pistes à 200 m.</p>
+    <div class="season"><span class="on">Hiver · déc. → avril</span><span>Été · juin → sept.</span></div>
+    <div class="ctas"><span class="btn wd">Voir les disponibilités</span><span class="btn l" style="color:#fff">Voir les chambres</span></div></div>
+  <div class="figs"><div><b>5</b><span>chambres</span></div><div><b>Demi-pension</b><span>dîner et petit-déjeuner</span></div><div><b>200 m</b><span>de la navette des pistes</span></div><div><b>1 050 m</b><span>d’altitude</span></div></div>
+</section>
+
+<section id="saisons" class="offer">
+  <div class="of dark"><span class="cap">Hiver</span><h3>Ski et montagne</h3><p>Du samedi au samedi pendant les vacances scolaires, 3 nuits minimum le reste de la saison.</p>
+    <ul><li>Local à skis chauffé</li><li>Navette pistes à 200 m</li><li>Sauna après le ski</li><li>Forfaits sur demande</li></ul></div>
+  <div class="of"><span class="cap">Été</span><h3>Randonnée et alpinisme</h3><p>Séjours de 2 nuits minimum, pique-nique préparé sur demande pour vos sorties.</p>
+    <ul><li>Départ des sentiers à pied</li><li>Panier pique-nique 14 €</li><li>Conseils d’itinéraires</li><li>Bureau des guides à 10 min</li></ul></div>
+</section>
+
+<section id="chambres" class="rooms">
+  <div class="sh"><div><span class="cap">Chambres</span><h2>Chambres et tarifs en demi-pension</h2></div><p>Prix par nuit pour 2 personnes, dîner et petit-déjeuner compris. Tarifs indicatifs.</p></div>
+  <div class="rt">
+    <div class="hd"><span></span><span>Chambre</span><span>Été</span><span>Hiver</span><span>Vacances d’hiver</span></div>
+    <div class="r"><div class="th" style="background-image:url(img/c-chambre.jpg)"></div><div><b>Chambre Aiguille du Midi</b><small>2 pers. · lit 160 · vue Mont-Blanc</small></div><span class="pr">170 €</span><span class="pr">210 €</span><span class="pr">250 €</span></div>
+    <div class="r"><div class="th" style="background-image:url(img/c-chambre2.jpg)"></div><div><b>Chambre Brévent</b><small>2 pers. · lit 180 · balcon</small></div><span class="pr">180 €</span><span class="pr">220 €</span><span class="pr">265 €</span></div>
+    <div class="r"><div class="th" style="background-image:url(img/c-lits.jpg)"></div><div><b>Chambre Flégère</b><small>2 pers. · lits jumeaux</small></div><span class="pr">160 €</span><span class="pr">200 €</span><span class="pr">240 €</span></div>
+    <div class="r"><div class="th" style="background-image:url(img/c-chambre3.jpg)"></div><div><b>Suite famille Argentière</b><small>4 pers. · 2 chambres</small></div><span class="pr">290 €</span><span class="pr">350 €</span><span class="pr">420 €</span></div>
+  </div>
+  <p class="illu">Et la chambre Planpraz (2 pers.). Taxe de séjour en supplément.</p>
+</section>
+
+<section id="chalet" class="chalet">
+  <div class="imgs"><div class="t" style="background-image:url(img/c-entree.jpg)"></div><div style="background-image:url(img/c-salon.jpg)"></div><div style="background-image:url(img/c-sdb.jpg)"></div></div>
+  <div class="txt"><span class="cap">Le chalet</span><h2 style="margin-top:12px">Un chalet en bois, pensé pour l’après-ski</h2>
+    <p>Salon avec cheminée, grande table d’hôtes pour le dîner, sauna et local à skis chauffé. Dîner à 19 h 30, cuisine savoyarde et de saison.</p>
+    <div class="eq">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-3 4-5 6-5 10a5 5 0 0 0 10 0c0-4-2-6-5-10z"/></svg>Sauna</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20 20 4M7 20l13-13"/></svg>Local à skis chauffé</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V10l8-6 8 6v11M9 21v-6h6v6"/></svg>Salon et cheminée</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="8" rx="2"/><path d="M7 11V7h10v4"/></svg>Parking privé</div>
+    </div></div>
+</section>
+
+<section id="alentours" class="acts">
+  <div class="sh"><div><span class="cap">Alentours</span><h2>Depuis le chalet</h2></div></div>
+  <div class="ag">
+    <div class="ac"><div class="pic" style="background-image:url(img/c-hameau.jpg)"></div><div class="body"><span class="cap">Hiver</span><h3>Domaines skiables</h3>
+      <div class="row"><span>Brévent – Flégère</span><b>10 min</b></div><div class="row"><span>Grands Montets</span><b>15 min</b></div><div class="row"><span>Vallée Blanche</span><b>avec guide</b></div></div></div>
+    <div class="ac"><div class="pic" style="background-image:url(img/c-sommet.jpg)"></div><div class="body"><span class="cap">Été</span><h3>Randonnées</h3>
+      <div class="row"><span>Lac Blanc</span><b>3 h</b></div><div class="row"><span>Grand Balcon Nord</span><b>4 h</b></div><div class="row"><span>Mer de Glace</span><b>train à 15 min</b></div></div></div>
+  </div>
+</section>
+
+<section id="infos" class="infos">
+  <div><span class="cap">Infos pratiques</span><h3>Séjour</h3>
+    <div class="hrow"><span>Hiver</span><span>mi-déc. → mi-avril</span></div>
+    <div class="hrow"><span>Été</span><span>juin → septembre</span></div>
+    <div class="hrow"><span>Arrivée</span><span>17 h – 19 h</span></div>
+    <div class="hrow"><span>Dîner</span><span>19 h 30</span></div></div>
+  <div><span class="cap">Accès</span><h3>Venir au chalet</h3><p><span class="ph">[Adresse]</span>, <span class="ph">74400 Chamonix-Mont-Blanc</span></p>
+    <p style="margin-top:12px">Gare de Chamonix à 5 min, aéroport de Genève à 1 h 10. Pneus neige obligatoires en hiver.</p></div>
+  <div><span class="cap">Contact</span><h3>Une question ?</h3><p><span class="ph">[04 00 00 00 00]</span><br><span class="ph">[bonjour@chalet-les-aiguilles.fr]</span></p>
+    <span class="btn wd" style="margin-top:22px">Voir les disponibilités</span></div>
+</section>
+<section class="final">
+  <span class="cap" style="color:#E2B98F">Hiver et été</span>
+  <h2 style="margin-top:12px">Réservez votre séjour au chalet</h2>
+  <p>Réservation en ligne, acompte de 30 %. Vacances d’hiver : du samedi au samedi.</p>
+  <span class="btn w">Voir les disponibilités</span>
+</section>
+<footer><span>© Chalet Les Aiguilles · Mentions légales · CGV</span><span>[04 00 00 00 00]</span><span>Maquette — maison d’hôtes fictive · informations illustratives</span></footer>
+
+</div>
+<div class="mb">
+
+<header id="mb-head"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Zilla Slab;font-weight:700;font-size:23px">Les Aiguilles</span><span style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A5A36;font-weight:700;margin-top:4px">Chalet d’hôtes · Chamonix</span></span><div class="r"><span class="btn a">Réserver</span><span class="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></span></div></header>
+<section class="hero" id="mb-hero">
+  <div class="p"><div class="cap">Chalet d’hôtes · demi-pension</div><h1>Chalet d’hôtes en demi-pension à Chamonix</h1><p>5 chambres, dîner et petit-déjeuner compris, sauna et local à skis.</p></div>
+  <div class="img" style="background-image:url(img/c-nuit.jpg)"></div>
+  <div class="book"><div class="cap">Vos dates</div><div class="f"><div><span class="cap">Arrivée</span><b>13 févr.</b></div><div><span class="cap">Départ</span><b>20 févr.</b></div><div><span class="cap">Pers.</span><b>2</b></div></div><span class="btn a">Voir les disponibilités</span><p class="note">Via <span class="ph">[outil de réservation]</span> · acompte 30 %</p></div>
+</section>
+<section class="blk" id="mb-sig"><div class="season"><span class="on">Hiver</span><span>Été</span></div><div class="cap" style="margin-top:20px">Chambres · hiver</div><h2>Tarifs en demi-pension</h2><div style="margin-top:10px"><div class="rm"><div class="th" style="background-image:url(img/c-chambre.jpg)"></div><div><b>Aiguille du Midi</b><small>2 pers. · vue Mont-Blanc</small></div><span class="pr">210 €</span></div><div class="rm"><div class="th" style="background-image:url(img/c-chambre2.jpg)"></div><div><b>Brévent</b><small>2 pers. · balcon</small></div><span class="pr">220 €</span></div><div class="rm"><div class="th" style="background-image:url(img/c-lits.jpg)"></div><div><b>Flégère</b><small>lits jumeaux</small></div><span class="pr">200 €</span></div><div class="rm"><div class="th" style="background-image:url(img/c-chambre3.jpg)"></div><div><b>Suite Argentière</b><small>4 pers.</small></div><span class="pr">350 €</span></div></div><p class="illu">Prix par nuit pour 2, dîner et petit-déjeuner compris. Tarifs indicatifs.</p></section>
+<section id="mb-rail" style="padding:44px 0 44px;"><div class="p"><div class="cap">Le chalet</div><h2>Pensé pour l’après-ski</h2></div><div class="rail" data-rail><div class="c"><div class="im" style="background-image:url(img/c-salon.jpg)"></div><h3>Salon et cheminée</h3><p>Dîner à 19 h 30.</p></div><div class="c"><div class="im" style="background-image:url(img/c-sdb.jpg)"></div><h3>Sauna et bains</h3><p>Après le ski.</p></div><div class="c"><div class="im" style="background-image:url(img/c-entree.jpg)"></div><h3>Local à skis</h3><p>Chauffé.</p></div></div><div class="dots" data-dots><i class="on"></i><i></i><i></i></div></section>
+<section class="blk" id="mb-team" style="padding-top:44px"><div class="cap">Alentours</div><h2>Depuis le chalet</h2><div class="row"><div><b>Brévent – Flégère</b><small>hiver</small></div><span class="pr">10 min</span></div><div class="row"><div><b>Grands Montets</b><small>hiver</small></div><span class="pr">15 min</span></div><div class="row"><div><b>Lac Blanc</b><small>été</small></div><span class="pr">3 h de marche</span></div><div class="row"><div><b>Mer de Glace</b><small>été</small></div><span class="pr">train à 15 min</span></div></section>
+<section class="blk" id="mb-infos" style="padding-top:20px"><div class="cap">Infos pratiques</div><h2>Venir au chalet</h2><div class="today"><div><b>Hiver 2027</b><span>mi-déc. → mi-avril</span></div><em>Ouvert</em></div><div style="margin-top:6px"><div class="hrow"><span>Arrivée</span><span>17 h – 19 h</span></div><div class="hrow"><span>Dîner</span><span>19 h 30</span></div><div class="hrow"><span>Été</span><span>juin → septembre</span></div></div>
+<div class="map"><svg viewBox="0 0 390 220" preserveAspectRatio="xMidYMid slice"><rect width="390" height="220" fill="#F4F5F3"/><path d="M-20 180L80 90L140 140L230 40L330 130L410 90L410 240L-20 240Z" fill="#E4E7E3"/><path d="M-20 160C120 150 260 170 410 150" stroke="#C9D3D8" stroke-width="8" fill="none"/><circle cx="180" cy="150" r="18" fill="#1F2D27" opacity=".14"/><circle cx="180" cy="150" r="6" fill="#1F2D27"/><text x="194" y="146" fill="#1F2D27" font-family="Zilla Slab" font-weight="600" font-size="15">Les Aiguilles</text></svg></div><p style="margin-top:14px;font-size:14.5px">Chalet Les Aiguilles · <span class="ph">[Adresse], 74400 Chamonix</span></p><div class="two"><span class="btn a">Itinéraire</span><span class="btn o">Appeler</span></div><p class="illu">Gare de Chamonix à 5 min. Pneus neige obligatoires.</p></section>
+<section class="final" id="mb-final"><div class="cap">Hiver et été</div><h2>Réservez votre séjour au chalet</h2><p>En ligne, acompte de 30 %.</p><span class="btn a">Voir les disponibilités</span></section>
+<footer id="mb-foot"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Zilla Slab;font-weight:700;font-size:23px">Les Aiguilles</span><span style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A5A36;font-weight:700;margin-top:4px">Chalet d’hôtes · Chamonix</span></span><p style="margin-top:10px">Chalet d’hôtes en demi-pension, vallée de Chamonix.</p><div class="links"><span>Hiver</span><span>Été</span><span>Chambres</span><span>Le chalet</span><span>Infos</span><span>CGV</span></div><div class="sm"><span>[04 00 00 00 00]</span><span>Maquette — restaurant fictif</span></div></footer>
+<div class="sticky" id="sticky"><span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="btn a">Réserver</span></div>
+
+</div>
+<script>
+  // la maquette ordinateur est dessinée sur 1440 px : on la met à l'échelle de la fenêtre
+  const dk = document.querySelector('.dk');
+  let lastW = 0;
+  function fit() {
+    const w = document.documentElement.clientWidth;
+    if (w === lastW) return;
+    lastW = w;
+    dk.style.zoom = w > 760 ? w / 1440 : '';
+  }
+  addEventListener('resize', fit); setInterval(fit, 300); fit();
+
+  // points du carrousel (mobile)
+  const rail = document.querySelector('.mb [data-rail]');
+  const dots = [...document.querySelectorAll('.mb [data-dots] i')];
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mas des Oliviers — maison d’hôtes, Luberon (maquette)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..600&family=Albert+Sans:wght@300..700&display=swap">
+<style>
+/* ===== version ordinateur (maquette 1440 px, mise à l'échelle) ===== */
+:root{--olive:#4E5B31;--olive-dk:#343D20;--stone:#F3F2EE;--paper:#FFFFFF;--ink:#23261C;--mut:#62665A;--line:#E0DFD8;--lav:#6E6596}
+*{box-sizing:border-box;margin:0;padding:0}
+.dk{width:1440px;position:relative;background:var(--paper);color:var(--ink);font-family:'Albert Sans',sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.dk .cap{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--lav)}
+.dk h2{font-family:'Newsreader',serif;font-weight:500;font-size:54px;line-height:1.05;color:var(--olive-dk);letter-spacing:-.01em}
+.dk .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:14.5px;padding:16px 26px;border-radius:4px;white-space:nowrap}
+.dk .btn.o{background:var(--olive);color:#fff}
+.dk .btn.w{background:#fff;color:var(--olive-dk)}
+.dk .btn.l{border:1.5px solid currentColor;padding:14.5px 24.5px}
+.dk .ph{border-bottom:1px dashed #A9AB9C;color:var(--mut);white-space:nowrap}
+.dk .sh{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:46px}
+.dk .sh h2{margin-top:12px}
+.dk .sh p{max-width:400px;color:var(--mut)}
+.dk header{position:absolute;left:0;right:0;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:28px 80px;color:#fff}
+.dk .logo b{font-family:'Newsreader';font-weight:500;font-size:30px;display:block;line-height:1}
+.dk .logo small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#E7E3F2}
+.dk nav{display:flex;gap:32px;font-size:15px;font-weight:600}
+.dk .hero{position:relative;height:860px;background:url(img/m-piscine2.jpg) center 65%/cover}
+.dk .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,28,15,.5) 0%,rgba(25,28,15,.1) 30%,rgba(25,28,15,.2) 55%,rgba(25,28,15,.78) 100%)}
+.dk .hero .in{position:absolute;left:80px;right:80px;bottom:200px;z-index:1;color:#fff}
+.dk .hero .cap{color:#E7E3F2}
+.dk .hero h1{font-family:'Newsreader';font-weight:500;font-size:76px;line-height:1.02;max-width:900px;margin:16px 0 20px;letter-spacing:-.015em}
+.dk .hero p{font-size:19px;max-width:620px;color:#F0EFE8}
+.dk .book{position:absolute;left:80px;right:80px;bottom:56px;z-index:2;background:#fff;border-radius:6px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;align-items:center;padding:10px}
+.dk .book div{padding:10px 20px;border-right:1px solid var(--line)}
+.dk .book div:nth-child(4){border-right:0}
+.dk .book .cap{color:var(--mut);font-size:10.5px;display:block}
+.dk .book b{font-family:'Newsreader';font-weight:500;font-size:22px;color:var(--ink)}
+.dk .keys{display:grid;grid-template-columns:repeat(5,1fr);margin:0 80px;border-bottom:1px solid var(--line)}
+.dk .keys div{padding:30px 0 28px}
+.dk .keys b{display:block;font-family:'Newsreader';font-weight:500;font-size:36px;line-height:1.1;color:var(--olive-dk)}
+.dk .keys span{font-size:14px;color:var(--mut)}
+.dk .rooms{padding:120px 80px}
+.dk .room{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
+.dk .room .pic{height:420px;background-size:cover;background-position:center;border-radius:4px}
+.dk .room h3{font-family:'Newsreader';font-weight:500;font-size:36px;color:var(--olive-dk)}
+.dk .room .spec{display:flex;gap:18px;margin:10px 0 14px;font-size:14.5px;color:var(--lav);font-weight:700}
+.dk .room p{color:var(--mut)}
+.dk .rates{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:4px}
+.dk .rates div{padding:14px 16px}
+.dk .rates div+div{border-left:1px solid var(--line)}
+.dk .rates span{display:block;font-size:12px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.dk .rates b{font-family:'Newsreader';font-weight:500;font-size:26px}
+.dk .illu{margin-top:16px;font-size:13.5px;color:var(--mut)}
+.dk .sejour{background:var(--stone);padding:110px 80px}
+.dk .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.dk .sc .pic{height:300px;border-radius:4px;background-size:cover;background-position:center}
+.dk .sc h3{font-family:'Newsreader';font-weight:500;font-size:27px;color:var(--olive-dk);margin-top:18px}
+.dk .sc p{color:var(--mut);font-size:15.5px;margin-top:6px}
+.dk .sc .pr{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--lav)}
+.dk .around{display:grid;grid-template-columns:1fr 1fr;min-height:620px}
+.dk .around .pic{background:url(img/m-lavande.jpg) center/cover}
+.dk .around .txt{padding:100px 80px;background:var(--olive-dk);color:#fff}
+.dk .around .cap{color:#CFC8E8}
+.dk .around h2{color:#fff;margin:12px 0 26px}
+.dk .dist div{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #4F5A39;font-size:16px}
+.dk .dist b{font-family:'Newsreader';font-weight:500;font-size:22px}
+.dk .gal{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.2fr;grid-template-rows:260px 260px;gap:10px;padding:120px 80px}
+.dk .gal div{background-size:cover;background-position:center;border-radius:4px}
+.dk .gal .t{grid-row:span 2}
+.dk .infos{padding:0 80px 120px;display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:56px}
+.dk .infos h3{font-family:'Newsreader';font-weight:500;font-size:27px;color:var(--olive-dk);margin-bottom:12px}
+.dk .hrow{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.dk .map{border-radius:4px;overflow:hidden;min-height:360px;position:relative}
+.dk .map svg{position:absolute;inset:0;width:100%;height:100%}
+.dk .final{background:url(img/m-transat.jpg) center/cover;position:relative;text-align:center;padding:130px 80px;color:#fff}
+.dk .final::before{content:"";position:absolute;inset:0;background:rgba(30,34,18,.6)}
+.dk .final *{position:relative}
+.dk .final h2{color:#fff;font-size:62px}
+.dk .final p{margin:16px auto 32px;max-width:560px;color:#F0EFE8}
+.dk footer{background:var(--olive-dk);color:#BFC4B0;padding:28px 80px 34px;display:flex;justify-content:space-between;font-size:13.5px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.dk{overflow:hidden}
+/* ===== version mobile ===== */
+:root{--bg:#FFFFFF;--fg:#23261C;--soft:#3F4336;--mut:#62665A;--line:#E0DFD8;--accent:#6E6596;--onaccent:#fff;--panel:#fff;--btnbg:#4E5B31;--btnfg:#fff;--stickybg:rgba(255,255,255,.97);--disp:"Newsreader",serif;--dw:500;--body:"Albert Sans",sans-serif;--emstyle:normal;--rad:4px;--avr:4px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+.mb{color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mb .p{padding:0 20px}
+.mb .cap{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.mb h2{font-family:var(--disp);font-weight:var(--dw);font-size:38px;line-height:1.08;margin-top:12px}
+.mb h2 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .btn{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:500;font-size:14px;letter-spacing:.06em;padding:15px 18px;white-space:nowrap;border-radius:var(--rad)}
+.mb .btn.a{background:var(--btnbg);color:var(--btnfg)}
+.mb .btn.o{border:1px solid var(--fg);padding:14px 17px}
+.mb .ph{border-bottom:1px dashed var(--mut);color:var(--mut);white-space:nowrap}
+.mb section{position:relative}
+.mb header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+.mb header .r{display:flex;gap:10px;align-items:center}
+.mb header .btn{padding:10px 14px;font-size:12.5px}
+.mb .burger{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.mb .burger svg{width:18px;height:18px}
+.mb .hero{padding:26px 0 0}
+.mb .hero h1{font-family:var(--disp);font-weight:var(--dw);font-size:46px;line-height:1.05;margin:14px 0 14px}
+.mb .hero h1 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .hero p{color:var(--soft);font-size:16px}
+.mb .hero .img{height:330px;margin-top:24px;background-size:cover;background-position:center}
+.mb .book{margin:0 20px;border:1px solid var(--line);padding:16px;background:var(--panel);transform:translateY(-36px)}
+.mb .book .f{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;margin:10px 0 12px}
+.mb .book .f div{border:1px solid var(--line);padding:7px 10px}
+.mb .book .f b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px}
+.mb .book .note{font-size:12px;color:var(--mut);margin-top:10px}
+.mb .blk{padding:14px 20px 44px}
+.mb .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.mb .row b{display:block;font-weight:500;font-size:15.5px;line-height:1.3}
+.mb .row small{display:block;color:var(--mut);font-size:13px}
+.mb .row .pr{font-family:var(--disp);font-size:18px;white-space:nowrap}
+.mb .illu{font-size:12px;color:var(--mut);margin-top:12px}
+.mb .rail{display:flex;gap:12px;overflow:hidden;padding:22px 20px 0}
+.mb .rail .c{flex:none;width:240px}
+.mb .rail .c .im{height:260px;background-size:cover;background-position:center}
+.mb .rail .c h3{font-family:var(--disp);font-weight:var(--dw);font-size:24px;margin-top:12px;line-height:1.1}
+.mb .rail .c p{font-size:13.5px;color:var(--mut);margin-top:4px}
+.mb .dots{display:flex;gap:6px;justify-content:center;margin-top:20px}
+.mb .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.mb .dots i.on{width:20px;border-radius:6px;background:var(--accent)}
+.mb .mem{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.mb .mem .av{width:72px;height:72px;background-size:cover;background-position:center 30%;border-radius:var(--avr)}
+.mb .mem h3{font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .mem p{font-size:13.5px;color:var(--mut)}
+.mb .today{margin-top:18px;border:1px solid var(--accent);padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.mb .today b{font-family:var(--disp);font-weight:var(--dw);font-size:20px;display:block;line-height:1.1}
+.mb .today span{font-size:13px;color:var(--soft)}
+.mb .today em{font-style:normal;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 9px}
+.mb .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.mb .map{margin-top:20px;height:220px;border:1px solid var(--line);overflow:hidden}
+.mb .map svg{width:100%;height:100%}
+.mb .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mb .final{padding:60px 20px 54px;text-align:center;border-top:1px solid var(--line)}
+.mb .final h2{font-size:40px}
+.mb .final p{color:var(--soft);margin:12px 0 22px}
+.mb footer{border-top:1px solid var(--line);padding:30px 20px 120px;color:var(--mut);font-size:13.5px}
+.mb footer .links{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin:18px 0;color:var(--fg)}
+.mb footer .sm{font-size:11.5px;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.mb .sticky{width:390px;padding:12px 16px 26px;background:var(--stickybg);border-top:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:10px}
+.mb .sticky .call{width:52px;height:52px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center}
+.mb .sticky .call svg{width:20px;height:20px}
+.mb .rm{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.mb .rm .th{width:96px;height:76px;background-size:cover;background-position:center;border-radius:var(--avr)}
+.mb .rm b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:19px;line-height:1.15}
+.mb .rm small{display:block;font-size:13px;color:var(--mut)}
+.mb .rm .pr{font-family:var(--disp);font-weight:var(--dw);font-size:19px;white-space:nowrap}
+.mb .figs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 22px}
+.mb .figs div{border-top:1px solid var(--line);padding-top:8px}
+.mb .figs b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .figs span{font-size:12px;color:var(--mut)}
+.mb .book .f b{font-size:15px}
+.mb .today em{font-size:0}
+.mb .today em::after{content:"Saison";font-size:11px}
+.mb #m-rail{background:#F3F2EE}
+.mb .cap{color:#6E6596;font-weight:700}
+
+.mb .rail{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-right:20px}
+.mb .rail::-webkit-scrollbar{display:none}
+.mb .rail .c{scroll-snap-align:start;scroll-margin-left:20px}
+.mb .sticky{position:fixed;left:0;right:0;bottom:0;width:auto;z-index:20;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+
+.mb{display:none}
+@media (max-width:760px){.dk{display:none}.mb{display:block}}
+</style>
+</head>
+<body>
+<div class="dk">
+
+<header>
+  <div class="logo"><b>Mas des Oliviers</b><small>Maison d’hôtes · Luberon</small></div>
+  <nav><a href="#chambres">Chambres</a><a href="#sejour">Séjour</a><a href="#alentours">Alentours</a><a href="#infos">Infos</a></nav>
+  <span class="btn w" style="padding:12px 22px">Réserver</span>
+</header>
+<section class="hero">
+  <div class="in"><span class="cap">Chambres d’hôtes · piscine chauffée · table d’hôtes</span>
+    <h1>Maison d’hôtes avec piscine dans le Luberon</h1>
+    <p>5 chambres dans un mas en pierre au milieu des oliviers, petit-déjeuner provençal inclus. À 10 minutes de Gordes.</p></div>
+  <div class="book">
+    <div><span class="cap">Arrivée</span><b>sam. 13 juin</b></div>
+    <div><span class="cap">Départ</span><b>mar. 16 juin</b></div>
+    <div><span class="cap">Voyageurs</span><b>2 adultes</b></div>
+    <div><span class="cap">Chambre</span><b>Toutes</b></div>
+    <span class="btn o">Voir les disponibilités</span>
+  </div>
+</section>
+<div class="keys">
+  <div><b>5</b><span>chambres et suites</span></div><div><b>12 × 5 m</b><span>piscine chauffée</span></div><div><b>2 ha</b><span>d’oliviers</span></div><div><b>10 min</b><span>de Gordes</span></div><div><b>45 min</b><span>d’Avignon TGV</span></div>
+</div>
+
+<section id="chambres" class="rooms">
+  <div class="sh"><div><span class="cap">Chambres</span><h2>Chambres et suites</h2></div><p>Prix par nuit pour 2 personnes, petit-déjeuner inclus. 3 nuits minimum en juillet et août.</p></div>
+  <div class="room"><div class="pic" style="background-image:url(img/m-chambre.jpg)"></div>
+    <div><h3>Chambre Olivier</h3><div class="spec"><span>2 pers.</span><span>Lit 180</span><span>Douche</span><span>Vue jardin</span></div>
+      <p>Au rez-de-chaussée, avec une terrasse privée sous la tonnelle.</p>
+      <div class="rates"><div><span>Avril – juin</span><b>130 €</b></div><div><span>Juillet – août</span><b>165 €</b></div><div><span>Sept. – oct.</span><b>130 €</b></div></div></div></div>
+  <div class="room"><div class="pic" style="background-image:url(img/m-chambre2.jpg)"></div>
+    <div><h3>Suite Lavande</h3><div class="spec"><span>4 pers.</span><span>2 chambres</span><span>Baignoire</span><span>Vue Luberon</span></div>
+      <p>À l’étage, deux chambres et un salon, idéale en famille.</p>
+      <div class="rates"><div><span>Avril – juin</span><b>190 €</b></div><div><span>Juillet – août</span><b>240 €</b></div><div><span>Sept. – oct.</span><b>190 €</b></div></div></div></div>
+  <p class="illu">Et 3 autres chambres : Romarin, Cyprès, Figuier. Tarifs donnés à titre d’exemple, taxe de séjour en supplément.</p>
+</section>
+
+<section id="sejour" class="sejour">
+  <div class="sh"><div><span class="cap">Votre séjour</span><h2>Inclus et à la demande</h2></div></div>
+  <div class="sg">
+    <div class="sc"><div class="pic" style="background-image:url(img/m-ptitdej.jpg)"></div><h3>Petit-déjeuner provençal</h3><p>Pain du village, confitures maison, fruits de saison. Servi en terrasse de 8 h à 10 h.</p><span class="pr">Inclus</span></div>
+    <div class="sc"><div class="pic" style="background-image:url(img/m-diner.jpg)"></div><h3>Table d’hôtes</h3><p>Dîner provençal les mardis, jeudis et samedis, sur réservation la veille.</p><span class="pr">38 € par personne, vin compris</span></div>
+    <div class="sc"><div class="pic" style="background-image:url(img/m-piscine3.jpg)"></div><h3>Piscine et jardin</h3><p>Piscine chauffée de mai à septembre, transats, coin ombragé sous les oliviers.</p><span class="pr">Inclus</span></div>
+  </div>
+</section>
+
+<section id="alentours" class="around">
+  <div class="pic"></div>
+  <div class="txt"><span class="cap">Alentours</span><h2>Le Luberon depuis le mas</h2>
+    <div class="dist">
+      <div><span>Gordes</span><b>10 min</b></div><div><span>Roussillon et ses ocres</span><b>15 min</b></div><div><span>Abbaye de Sénanque et lavandes</span><b>15 min</b></div><div><span>Marché de L’Isle-sur-la-Sorgue</span><b>25 min</b></div><div><span>Avignon et gare TGV</span><b>45 min</b></div>
+    </div></div>
+</section>
+
+<section class="gal">
+  <div class="t" style="background-image:url(img/m-arche.jpg)"></div>
+  <div style="background-image:url(img/m-olives.jpg)"></div>
+  <div style="background-image:url(img/m-bougain.jpg)"></div>
+  <div class="t" style="background-image:url(img/m-piscine.jpg)"></div>
+  <div style="background-image:url(img/m-lavande2.jpg)"></div>
+  <div style="background-image:url(img/m-sdb.jpg)"></div>
+</section>
+
+<section id="infos" class="infos">
+  <div><h3>Infos pratiques</h3>
+    <div class="hrow"><span>Ouverture</span><span>Avril → octobre</span></div>
+    <div class="hrow"><span>Arrivée</span><span>16 h – 20 h</span></div>
+    <div class="hrow"><span>Départ</span><span>avant 11 h</span></div>
+    <div class="hrow"><span>Enfants</span><span>bienvenus</span></div>
+    <div class="hrow"><span>Animaux</span><span>non admis</span></div></div>
+  <div><h3>Accès et contact</h3><p><span class="ph">[Adresse du mas]</span><br><span class="ph">84XXX [Commune]</span></p>
+    <p style="margin-top:14px">Gare d’Avignon TGV à 45 min, aéroport de Marseille à 1 h 15.</p>
+    <p style="margin-top:14px"><span class="ph">[04 00 00 00 00]</span><br><span class="ph">[bonjour@mas-des-oliviers.fr]</span></p></div>
+  <div class="map"><svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+    <rect width="600" height="360" fill="#F3F2EE"/>
+    <path d="M-20 260 C140 220 300 300 620 220" stroke="#E2E0D6" stroke-width="40" fill="none"/>
+    <text x="40" y="300" fill="#8B8D7E" font-family="Albert Sans" font-size="12" letter-spacing="3">LUBERON</text>
+    <path d="M40 -10 L220 370 M-10 90 L610 60 M380 -10 L330 370" stroke="#DCDACF" stroke-width="5" fill="none"/>
+    <circle cx="190" cy="110" r="7" fill="#62665A"/><text x="202" y="115" fill="#23261C" font-family="Newsreader" font-size="19">Gordes</text>
+    <circle cx="420" cy="170" r="6" fill="#62665A"/><text x="432" y="175" fill="#62665A" font-family="Albert Sans" font-size="14">Roussillon</text>
+    <circle cx="270" cy="190" r="24" fill="#4E5B31" opacity=".15"/><circle cx="270" cy="190" r="8" fill="#4E5B31"/>
+    <text x="286" y="214" fill="#343D20" font-family="Newsreader" font-size="18">Mas des Oliviers</text>
+  </svg></div>
+</section>
+
+<section class="final">
+  <span class="cap" style="color:#E7E3F2">Saison avril → octobre</span>
+  <h2 style="margin-top:12px">Réservez votre séjour au mas</h2>
+  <p>Réservation en ligne, acompte de 30 %. Réponse sous 24 h pour les demandes particulières.</p>
+  <span class="btn w">Voir les disponibilités</span>
+</section>
+<footer><span>© Mas des Oliviers · Mentions légales · CGV</span><span>[04 00 00 00 00] · [bonjour@mas-des-oliviers.fr]</span><span>Maquette — maison d’hôtes fictive · informations illustratives</span></footer>
+
+</div>
+<div class="mb">
+
+<header id="mb-head"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Newsreader;font-weight:500;font-size:23px">Mas des Oliviers</span><span style="font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#6E6596;font-weight:700;margin-top:4px">Maison d’hôtes · Luberon</span></span><div class="r"><span class="btn a">Réserver</span><span class="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></span></div></header>
+<section class="hero" id="mb-hero">
+  <div class="p"><div class="cap">Chambres d’hôtes · piscine chauffée</div><h1>Maison d’hôtes avec piscine dans le Luberon</h1><p>5 chambres dans un mas en pierre, petit-déjeuner provençal inclus. À 10 min de Gordes.</p></div>
+  <div class="img" style="background-image:url(img/m-piscine2.jpg)"></div>
+  <div class="book"><div class="cap">Vos dates</div><div class="f"><div><span class="cap">Arrivée</span><b>13 juin</b></div><div><span class="cap">Départ</span><b>16 juin</b></div><div><span class="cap">Pers.</span><b>2</b></div></div><span class="btn a">Voir les disponibilités</span><p class="note">Via <span class="ph">[outil de réservation]</span> · acompte 30 %</p></div>
+</section>
+<section class="blk" id="mb-sig"><div class="figs"><div><b>5</b><span>chambres</span></div><div><b>12 × 5 m</b><span>piscine</span></div><div><b>10 min</b><span>de Gordes</span></div></div><div class="cap">Chambres</div><h2>Chambres et suites</h2><div style="margin-top:10px"><div class="rm"><div class="th" style="background-image:url(img/m-chambre.jpg)"></div><div><b>Chambre Olivier</b><small>2 pers. · terrasse privée</small></div><span class="pr">dès 130 €</span></div><div class="rm"><div class="th" style="background-image:url(img/m-chambre2.jpg)"></div><div><b>Suite Lavande</b><small>4 pers. · 2 chambres</small></div><span class="pr">dès 190 €</span></div><div class="rm"><div class="th" style="background-image:url(img/m-sdb.jpg)"></div><div><b>Chambre Romarin</b><small>2 pers. · baignoire</small></div><span class="pr">dès 120 €</span></div></div><p class="illu">Prix par nuit pour 2, petit-déjeuner inclus. Juillet-août : + 25 %. Tarifs indicatifs.</p></section>
+<section id="mb-rail" style="padding:44px 0 44px;"><div class="p"><div class="cap">Votre séjour</div><h2>Inclus et à la demande</h2></div><div class="rail" data-rail><div class="c"><div class="im" style="background-image:url(img/m-ptitdej.jpg)"></div><h3>Petit-déjeuner</h3><p>Inclus, en terrasse.</p></div><div class="c"><div class="im" style="background-image:url(img/m-diner.jpg)"></div><h3>Table d’hôtes</h3><p>38 €, vin compris.</p></div><div class="c"><div class="im" style="background-image:url(img/m-piscine3.jpg)"></div><h3>Piscine chauffée</h3><p>Mai à septembre.</p></div></div><div class="dots" data-dots><i class="on"></i><i></i><i></i></div></section>
+<section class="blk" id="mb-team" style="padding-top:44px"><div class="cap">Alentours</div><h2>Le Luberon depuis le mas</h2><div class="hero" style="padding:0"><div class="img" style="height:200px;margin-top:16px;background-image:url(img/m-lavande.jpg)"></div></div><div class="row"><div><b>Gordes</b></div><span class="pr">10 min</span></div><div class="row"><div><b>Roussillon</b></div><span class="pr">15 min</span></div><div class="row"><div><b>Abbaye de Sénanque</b></div><span class="pr">15 min</span></div><div class="row"><div><b>Avignon TGV</b></div><span class="pr">45 min</span></div></section>
+<section class="blk" id="mb-infos" style="padding-top:20px"><div class="cap">Infos pratiques</div><h2>Venir au mas</h2><div class="today"><div><b>Saison 2027</b><span>avril → octobre</span></div><em>Ouvert</em></div><div style="margin-top:6px"><div class="hrow"><span>Arrivée</span><span>16 h – 20 h</span></div><div class="hrow"><span>Départ</span><span>avant 11 h</span></div><div class="hrow"><span>Animaux</span><span>non admis</span></div></div>
+<div class="map"><svg viewBox="0 0 390 220" preserveAspectRatio="xMidYMid slice"><rect width="390" height="220" fill="#F3F2EE"/><path d="M-20 170C90 140 190 190 410 140" stroke="#E2E0D6" stroke-width="26" fill="none"/><path d="M30 -10L140 230M-10 60L410 40" stroke="#DCDACF" stroke-width="4"/><circle cx="120" cy="70" r="6" fill="#62665A"/><text x="132" y="75" fill="#23261C" font-family="Newsreader" font-size="16">Gordes</text><circle cx="190" cy="125" r="18" fill="#4E5B31" opacity=".15"/><circle cx="190" cy="125" r="6" fill="#4E5B31"/></svg></div><p style="margin-top:14px;font-size:14.5px">Mas des Oliviers · <span class="ph">[Adresse], 84XXX [Commune]</span></p><div class="two"><span class="btn a">Itinéraire</span><span class="btn o">Appeler</span></div><p class="illu">Gare d’Avignon TGV à 45 min.</p></section>
+<section class="final" id="mb-final"><div class="cap">Avril → octobre</div><h2>Réservez votre séjour au mas</h2><p>En ligne, acompte de 30 %.</p><span class="btn a">Voir les disponibilités</span></section>
+<footer id="mb-foot"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Newsreader;font-weight:500;font-size:23px">Mas des Oliviers</span><span style="font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#6E6596;font-weight:700;margin-top:4px">Maison d’hôtes · Luberon</span></span><p style="margin-top:10px">Maison d’hôtes avec piscine dans le Luberon.</p><div class="links"><span>Chambres</span><span>Séjour</span><span>Alentours</span><span>Infos</span><span>CGV</span><span>Mentions légales</span></div><div class="sm"><span>[04 00 00 00 00]</span><span>Maquette — restaurant fictif</span></div></footer>
+<div class="sticky" id="sticky"><span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="btn a">Réserver</span></div>
+
+</div>
+<script>
+  // la maquette ordinateur est dessinée sur 1440 px : on la met à l'échelle de la fenêtre
+  const dk = document.querySelector('.dk');
+  let lastW = 0;
+  function fit() {
+    const w = document.documentElement.clientWidth;
+    if (w === lastW) return;
+    lastW = w;
+    dk.style.zoom = w > 760 ? w / 1440 : '';
+  }
+  addEventListener('resize', fit); setInterval(fit, 300); fit();
+
+  // points du carrousel (mobile)
+  const rail = document.querySelector('.mb [data-rail]');
+  const dots = [...document.querySelectorAll('.mb [data-dots] i')];
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+  }, { passive: true });
+</script>
+</body>
+</html>
